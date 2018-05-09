@@ -1,0 +1,80 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="ltr"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabGravity="fill"
+            app:tabMode="fixed" />
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5sp"
+            android:layout_marginBottom="5sp"
+            android:background="@drawable/settings_icon"
+            android:id="@+id/setting" />
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_above="@+id/tools"
+            android:visibility="invisible"
+            android:layout_toLeftOf="@+id/tools"
+            android:layout_toStartOf="@+id/tools"
+            android:background="@drawable/call_icon"
+            android:id="@+id/call" />
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_above="@+id/call"
+            android:id="@+id/messege"
+            android:layout_toLeftOf="@+id/call"
+            android:layout_toStartOf="@+id/call"
+            android:visibility="invisible"
+            android:background="@drawable/message_icon" />
+
+        <Button
+            android:id="@+id/tools"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_above="@+id/setting"
+            android:layout_toLeftOf="@+id/setting"
+            android:visibility="invisible"
+            android:layout_toStartOf="@+id/setting"
+            android:background="@drawable/tools_icon" />
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

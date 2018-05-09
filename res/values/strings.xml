@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">سوبر ماركت الزبدة</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="setting_text">شكرا لكم على استخدامكم تطبيق سوبر ماركت الزبدة ,
+        لقد قمنا ببناء هذا التطبيق للتسهيل على  الزبائن الكرام معرفة السلع والعروض المتوفر بأسعارها سوف نكون سعداء لزيارتكم لنا نتمنى لكم يوما سعيدا.
+    </string>
+    <string name="setting_notes"> بعض الأحيان تأخذ البيانات وقتا اطول من المعتاد للتحميل اعتمادا على سرعة الانترنت , في حال كان لديكم أي اضافات او تعليق على التطبيق بإمكانكم التواصل معنا عن طريق البريد الإلكتروني , مطور التطبيق:علاء الزبدة.</string>
+
+</resources>
